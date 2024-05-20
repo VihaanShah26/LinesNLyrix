@@ -7,6 +7,7 @@ import sys
 import boto3
 from configparser import ConfigParser
 import pandas as pd
+import math 
 
 # eliminate traceback so we just get error message:
 sys.tracebacklimit = 0
@@ -55,6 +56,8 @@ def read_csv_file(file_path):
     row = df.iloc[1]
     Uploaded_decade = row['Uploaded (decade)']
     potpourri = row['Songs Potpourri'] 
+    if potpourri == math.nan: 
+      potpourri = "No"
     lyrix = row['Lyrix']
     song_name = row['Song name']
     Artist = row['Artist']
@@ -66,9 +69,9 @@ def read_csv_file(file_path):
     # print the datatypes of the columns 
     # print(df.dtypes)
 
-    print(potpourri)
+    # print(potpourri)
 
-    # print([Artist, decade, genre, lyrix, song_name, year, potpourri, Link])
+    print([Artist, decade, genre, lyrix, song_name, year, potpourri, Link])
 
     # sql = "INSERT INTO songs (artist, decade, genre, lyrix, song_name, song_year, songs_potpourri, youtube_link) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)"
     # datatier.perform_action(dbConn, sql, [Artist, decade, genre, lyrix, song_name, year, potpourri, Link])

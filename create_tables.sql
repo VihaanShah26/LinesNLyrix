@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS songs;
 
 CREATE TABLE songs (
   song_id INT PRIMARY KEY AUTO_INCREMENT,
-  songs_potpourri INT,
+  songs_potpourri VARCHAR(20),
   lyrix VARCHAR(1000),
   song_name VARCHAR(80),
   artist VARCHAR(80),
