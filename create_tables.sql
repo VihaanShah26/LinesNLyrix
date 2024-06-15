@@ -13,6 +13,8 @@ CREATE TABLE songs (
   youtube_link VARCHAR(150),
   decade VARCHAR(20),
   genre VARCHAR(50),
-  song_year INT
+  song_year INT, 
+  album VARCHAR(80),
+  cover VARCHAR(150)
 );
 ALTER TABLE songs AUTO_INCREMENT = 1;
