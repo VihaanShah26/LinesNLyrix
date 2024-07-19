@@ -1,0 +1,62 @@
+
+.base-timer {
+  font-family: sans-serif;
+  position: fixed; /* Makes the timer fixed to the viewport */
+  top: 20px; /* Adjust for desired top position */
+  right: 20px; /* Adjust for desired right position */
+  width: 150px; /* Adjust for desired width */
+  height: 150px; /* Adjust for desired height */
+}
+
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 7px;
+  stroke: grey;
+}
+
+.base-timer__path-remaining {
+  stroke-width: 7px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+  color: rgb(65, 184, 131);
+}
+
+.base-timer__path-remaining.orange {
+  color: orange;
+}
+
+.base-timer__path-remaining.red {
+  color: red;
+}
+
+.base-timer__label {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.base-timer__label {
+  width: 150px; /* Adjust to match timer size */
+  height: 150px; /* Adjust to match timer size */
+  font-size: 24px; /* Adjust for desired font size */
+}

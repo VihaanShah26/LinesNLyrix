@@ -1,0 +1,88 @@
+.game-configuration {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the full height of the viewport is used */
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+  background-color: #f44236; /* Consistent red background */
+  text-align: center;
+  margin: 0;
+}
+
+header {
+  background-color: #f44236; /* Dark red for header */
+  padding: 10px 0;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 0 10px;
+  background-color: #333399; /* Placeholder for actual color */
+  border-radius: 20px;
+}
+
+.configuration-container {
+  flex-grow: 1; /* Allows this container to grow and fill the space */
+  display: flex;
+  flex-direction: column; /* Align children in a vertical column */
+  justify-content: flex-start; /* Align items to the start (top) */
+  align-items: center; /* Centers items horizontally */
+  padding: 20px 0; /* Adds padding at the top and bottom */
+}
+
+.config-option {
+  width: 100%; /* Ensures the input elements span the same width */
+  max-width: 400px; /* Controls the maximum width for better alignment */
+  margin: 10px 0; /* Spacing vertically between options */
+}
+
+.config-option label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left; /* Aligns the label text to the left */
+}
+
+.config-option input,
+.config-option select {
+  width: 100%; /* Ensures the input/select elements span the full width */
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc; /* Adds a border for better visibility */
+  box-sizing: border-box; /* Ensures padding doesn't affect total width */
+}
+
+.start-button {
+  background-color: #333399; /* Dark blue */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-top: 20px; /* Additional spacing above the button */
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.start-button:hover {
+  background-color: #6699CC;
+   /* Light blue */
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

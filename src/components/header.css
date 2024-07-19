@@ -1,0 +1,62 @@
+header {
+  width: 100%;
+  /* background-color: #1a0000; /* Dark red background */ */
+  padding: 0.5rem 0;
+}
+
+.logo-and-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-and-nav img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+}
+
+.logo {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Full width */
+  padding: 0.5rem 0; /* Adds padding around links */
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 20px;
+  margin: 0 10px;
+  font-size: 1rem;
+  border-radius: 10px;
+ 
+  background-color:  #fff3b0; /* Background color for inactive state */
+  color: black;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+nav a:hover {
+  background-color: #202060;
+  color: white;
+}
+
+.main-banner {
+  text-align: center;
+  padding: 1rem 2rem;
+  width: 100%;
+  margin-bottom: 2rem; /* Additional space below the banner text */
+  background-color: #202060; /* Lighter blue background color */
+  padding: 2px 0;
+  color: white; 
+  font-family: 'Poppins', sans-serif; 
+  font-style: italic; /* Makes the text italic */
+}
