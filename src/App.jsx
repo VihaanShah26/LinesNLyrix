@@ -13,7 +13,7 @@ export default function App() {
   const [randomSongs, setRandomSongs] = useState([]);
   const [gameConfig, setGameConfig] = useState({ rounds: 10, timePerRound: 30, genre: "Any", decade: "Any" });
 
-  const baseURL = "http://linesserver.us-east-2.elasticbeanstalk.com";
+  const baseURL = "http://linesserver-env.eba-zqbymp9q.us-east-2.elasticbeanstalk.com";
   useEffect(() => {
     const queryParams = new URLSearchParams({
       rounds: gameConfig.rounds,
