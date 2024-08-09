@@ -7,7 +7,7 @@ const Home = () => {
     <div className="home-container">
       <header>
         <div className="logo-and-nav">
-          <img src='https://s3-alpha-sig.figma.com/img/8026/ce21/7ce1c91dc6c9ef4dedf3715872b15511?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nsUHkXgzHa7shn~PMcVkbsemwF-e8Io2nLOsGH1TvyUuBMWjTdl7GetNK-GPWeofhnR8Qajd2~JfttWjjWA96x-MYth9Izcqf-6BRRfHs5KZHx-v8bqy1RnE8zFm-ydsSCSJaT3zO0V0ovLl4xSe0cJkku3Qohv1Y~A4U2eUTgZh9bEPrZGnKEn9tupErg9mtY8O9ME3WPdOcHsAJkdQjEE9cBTXEl8zHBBkd8TSmcj6Qi0ghAQq2zt4LIA-RAF-g3j1EZZMixNJ88qz6TwEQhi57yr4z8ci3P5OpEMDkKM4qrKaaIwrROGUGhqnuqveDJ7vHRx7f4WTTw8tVzxWGQ__' alt="Logo"/>
+          <img src='https://logo-for-app.s3.us-east-2.amazonaws.com/7ce1c91dc6c9ef4dedf3715872b15511.png' alt="Logo"/>
           <nav>
             <Link to="/">Home</Link>
             <Link to="/games">Games</Link>
